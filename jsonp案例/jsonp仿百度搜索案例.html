@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonp仿百度搜索</title>
+</head>
+<link rel="stylesheet" href="./json.css">
+<body>
+    <div class="search-warp">
+        <!-- 搜索 -->
+       <div class="input-warp">
+           <input type="text" class="search-input J_searchInput">
+       </div>
+       <!-- 搜索提示 -->
+       <div class="list-warp">
+            <ul class="wd-list J_wdList">
+                
+            </ul>
+       </div>
+    </div>
+</body>
+<script type="text/html" id="J_listTpl">
+<li class="wd-item">
+  <a class="wd-lk"
+   href="https://www.baidu.com/s?wd={{wdLink}}"
+   target="_blank">
+   {{wd}}
+</a>
+</li>
+</script>
+<script src="./jsonp.js"></script>
+</html>
